@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sequence Polynomial Finder</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nerdamer@1.1.13/nerdamer.core.min.js"></script>
+
+    <script src="js/index.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <h3>Sequence Polynomial Finder</h3>
+    <h4>— Lowest Degree Polynomial Function</h4>
+    <form id="sequence-info" name="sequence-info">
+        <label for="terms-value">Sequence Term Values<br>Format: 1 4 ? 16 or (1, 1), (2, 4), (4, 16)</label><br>
+        <input id="terms-value" name="terms-value" placeholder="1 2 3" required><br>
+
+        <br>
+        <input type="submit" value="Find!">
+    </form>
+    <p id="polynomial-function"></p>
+    <table id="sequence-table"></table>
+    <button id="sequence-show-more-button" name="sequence-show-more-button">Show More Values</button>
+</body>
+</html>
